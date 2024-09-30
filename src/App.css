@@ -1,0 +1,420 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+li{
+  color: red;
+}
+
+.nav-link:hover{
+  color: red !important;
+}
+
+.nav-link.active {
+  color: red!important;
+}
+
+.container{
+  width: 100%;
+}
+
+.navbar img{
+  margin-left: 30px;
+}
+
+.navbar-nav{
+  display: flex;
+  gap: 20px;
+  color: black;
+}
+.navbar{
+  box-shadow: 0px 2px 10px 0px black;
+}
+li a:hover{
+  color: red;
+}
+
+/* Home css  */
+.bg-img{
+  background-image: url('./assets/images/Login.svg');
+  background-size: 50%;
+  height: 740px;
+  background-repeat: no-repeat;
+  background-color: #FFD9D2;
+
+}
+
+.header{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 100px;
+  margin-top: 70px;
+}
+
+.navbar-text{
+  width: 450px;
+  margin-left: 100px;
+  margin-top: 20px;
+  font-family: "Poppins", sans-serif;
+}
+
+p{
+  margin-top: 10px;
+}
+
+.nav-img{
+  margin-top: 20px;
+  margin-left: 40px;
+}
+
+.nav-btn{
+  width: 160px;
+  height: 40px;
+  border-radius: 10px;
+  background-color: #EE4E4E;
+  color: white;
+  border: transparent;
+  font-size: medium;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 10px;
+}
+
+.billing_text{
+  display: grid;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+/* .explain-all{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+} */
+
+.explain{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-left: 50px;
+  margin-top: 30px;
+  gap: 80px;
+}
+
+.explain-all img{
+  width: 500px;
+  height: 400px;
+}
+
+.explain-all p{
+  width: 500px;
+  margin-top: 15px;
+  /* margin-left: 20px; */
+  color: #7E7E7E;
+}
+
+.explain-all h3{
+  /* width: 400px; */
+  margin-top: 13px;
+  /* margin-left: 20px; */
+  font-weight: 400;
+}
+
+.service-all{
+  width: 118%;
+  height: 670px;
+  background-color: #FEF2F2;
+  position: relative;
+  right: 120px;
+}
+
+.service{
+  padding: 20px;
+}
+
+.service-txt{
+  display: grid;
+  justify-content: center;
+}
+
+.service-txt h2{
+  display: grid;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.service-txt p{
+  color: #7E7E7E;
+}
+
+.service-img{ 
+  width: 567px;
+  height: 563px;
+  margin-left: 148px;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.plugging{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.service-item{
+  margin-left: 100px;
+}
+
+.service-item img{
+  width: 60px;
+  margin-left: 45px;
+}
+
+
+.service-item p{
+  font-size: medium;
+  color: #7E7E7E;
+  width: 200px;
+}
+
+
+/* Footer css */
+
+.footer{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 150px;
+}
+
+.footer-POS h3{
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.footer-POS li{
+  list-style-type: none;
+  color: #7E7E7E;
+  margin-top: 15px;
+}
+
+.footer-POS p{
+  margin-left: 30px;
+  color: #7E7E7E;
+}
+
+.f_btn{
+  margin-left: 30px;
+  width: 150px;
+  margin-top: 30px;
+  height: 35px;
+  border-radius: 10px;
+  background-color: #EE4E4E;
+  color: white;
+  border: transparent;
+  font-weight: 500;
+}
+
+.f-img{
+  width: 100px;
+  margin-bottom: 50px;
+}
+
+.follow{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* padding: 10px; */
+  margin-left: 200px;
+  margin-bottom: 50px;
+}
+
+.follow .f-logo{
+  display: flex;
+  gap: 20px;
+}
+.follow .f-logo i{
+  font-size: 25px;
+  margin-left: 30px;
+  margin-top: 20px;
+}
+.follow p{
+  color: #7E7E7E;
+}
+.follow p:hover{
+  color: red;
+}
+/* p:hover{
+  color:#EE4E4E;
+} */
+
+/* Table View */
+
+.table-txt{
+  margin-top: 50px;
+  margin-left: 30px;
+  font-weight: 500;
+  color: #2e2e2e;
+}
+
+hr{
+  width: 98%;
+  margin-top: 40px;
+}
+
+.ground-floor{
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: larger;
+  color: #EE4E4E;
+}
+
+.boxes{
+    width: 110px;
+    background-color: white;
+    height: 110px;
+    margin-left: 30px;
+    margin-top: 30px;
+    border: 2px dotted black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.boxes:hover{
+  background-color: #ffd3d3;
+}
+
+.party-boxes:hover{
+  background-color: #ffd3d3;
+}
+
+.box{
+  display: flex;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+}
+
+.party-floor{
+  margin-left: 30px;
+  margin-top: 50px;
+  font-size: larger;
+  color: #EE4E4E;
+}
+
+.party-boxes{
+  width: 350px;
+  background-color: white;
+  height: 150px;
+  margin-left: 30px;
+  margin-top: 30px;
+  border: 2px dotted black;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  font-size: larger;
+  border-radius: 10px;
+  cursor: pointer;
+}
+ 
+.party-box{
+  display: flex;
+}
+
+/* login page  */
+
+.login{
+  width: 500px;
+  border: transparent;
+  margin-left: 20px;
+  background-color: white;
+  padding: 10px;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  background: #e18989;
+  color: white;
+}
+.signup{
+  width: 500px;
+  border: transparent;
+  background-color: white;
+  margin-right: 20px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #cb6060;
+  color: white;
+}
+
+.both{
+  width: 400px;
+  height: 50px;
+  display: grid;
+  justify-content: center;
+  margin-right: 100px;
+  position: relative;
+  top: 50px;
+  margin-bottom: 5px;
+}
+
+.logins{
+  display: grid;
+  width: 30px;
+  position: relative;
+  top: 50px;
+  left: 25px;
+}
+
+.logins input{
+  margin-top: 20px;
+  width: 350px;
+  height: 50px;
+  border-radius: 10px;
+  border: transparent;
+  padding: 10px;
+}
+
+.logins input:hover{
+  border-color: #e18989;
+}
+
+.logins input:focus::placeholder{
+  color: #cb6060;
+}
+
+.logins button{
+  margin-top: 30px;
+  height: 40px;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #EE4E4E;
+  color: white;
+}
+
+.logins p{
+  margin-top: 25px;
+}
+
+::placeholder{
+  position: relative;
+  left: 20px;
+  transition: all 0.3s ease;
+}
+
+
+
+.cards{
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  width: 400px;
+  height: 450px;
+  position: relative;
+  top: 160px;
+  left: 970px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
