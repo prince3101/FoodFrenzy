@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 
+
 const Home = lazy(() => import('../pages/home'));
 const Login = lazy(() => import('../pages/login'));
 const About = lazy(() => import('../pages/about'));
@@ -16,7 +17,7 @@ const KOT = lazy(() => import('../pages/kot'));
 const Navigate = () => {
   return (
     <Routes>
-        <Route exact path="/" element={<Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
+        <Route exact path="/" element={<Suspense fallback= {<div>Loading...</div>} ><Login /></Suspense>} />
         <Route exact path="/home" element={<Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
         <Route exact path="/about" element={<Suspense fallback={<div>Loading...</div>}><About /></Suspense>} />
         <Route exact path="/table" element={<Suspense fallback={<div>Loading...</div>}><Table /></Suspense>} />
