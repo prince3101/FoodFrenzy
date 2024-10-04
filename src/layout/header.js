@@ -19,13 +19,17 @@ const header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span className="navbar-toggler-icon">
-            </span>
+            <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav ms-auto ">
               <li className="nav-item">
-                <NavLink className="nav-link" activeClassName="active" aria-current="page" to="/home">
+                <NavLink
+                  className="nav-link"
+                  activeClassName="active"
+                  aria-current="page"
+                  to="/home"
+                >
                   Home
                 </NavLink>
               </li>
@@ -35,24 +39,24 @@ const header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#">
+                <NavLink className="nav-link" activeClassName="active" to="/kot">
                   KOT
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                <NavLink className="nav-link" activeClassName="active" to="/bill">
                   Billing
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                <NavLink className="nav-link" activeClassName="active" to="/contact">
                   Contact
-                </a>
+                </NavLink>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="#" tabindex="-1" aria-disabled="true">
+                <NavLink className="nav-link" activeClassName="active" to="/about">
                   About Us
-                </a>
+                </NavLink>
               </li>
             </ul>
           </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import Logo from "../assets/images/Logo.png"
+import { NavLink } from "react-router-dom";
 
 const footer = () => {
   return (
@@ -16,9 +17,11 @@ const footer = () => {
               <li>Contact</li>
               <li>About Us</li>
             </ul>
+            <NavLink className="link2" to="/table">
             <button type="button" className="f_btn">
               Start Billing
             </button>
+            </NavLink>
           </div>
           <div className="footer-POS">
             <h3>Outlet types</h3>

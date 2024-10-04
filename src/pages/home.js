@@ -13,7 +13,9 @@ const Home = () => {
               you to upgrade to FoodFrenzy restaurant billing software.
             </p>
             <button type="button" className="nav-btn">
+              <NavLink className="link2" to="/table">
               Start Billing
+              </NavLink>
             </button>
           </div>
           <div className="nav-img">
@@ -41,7 +43,7 @@ const Home = () => {
               <h3>Multi-terminal billing</h3>
               <p>
                 In need of multiple billing terminals for your different areas and menus? Don’t
-                worry! Petpooja POS lets you easily create multiple billing counters and sync them
+                worry! FoodFrenzy POS lets you easily create multiple billing counters and sync them
                 with one master station so that your captains can generate KOTs and settle bills
                 from the right station.
               </p>
@@ -62,7 +64,7 @@ const Home = () => {
               <h3>Table and area management</h3>
               <p>
                 Big restaurants, big problems. Minimise your problems by making your area and table
-                management simple with Petpooja restaurant POS. Configure different dine-in areas
+                management simple with FoodFrenzy restaurant POS. Configure different dine-in areas
                 with their respective menus, service tax rates and customisable seating arrangements
               </p>
             </div>
