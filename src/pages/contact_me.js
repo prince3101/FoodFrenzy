@@ -17,7 +17,7 @@ const Contact_me = () => {
 
   const handleContact = (e) => {
     e.preventDefault();
-    console.log(me);  
+    console.log(me);
   };
 
   return (
@@ -34,62 +34,70 @@ const Contact_me = () => {
         <div className="me-input">
           <div className="message">
             <form onSubmit={handleContact}>
-              <div className="firstname">
-                <label>Firstname</label>
-                <br></br>
-                <input
-                  type="text"
-                  placeholder="firstname"
-                  name="firstName"
-                  value={me.firstName}
-                  onChange={handleUs}
-                ></input>
+              <div className="row">
+                <div className="col-lg-6 col-md-6 col-12 col-sm-12">
+                  <div className="firstname">
+                    <label className="mt-2">Firstname</label>
+                    <input
+                      type="text"
+                      placeholder="firstname"
+                      name="firstName"
+                      value={me.firstName}
+                      onChange={handleUs}
+                    ></input>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-6 col-12 col-sm-12">
+                  <div className="lastname">
+                    <label className="mt-2">Lastname</label>
+                    <input
+                      type="text"
+                      placeholder="lastname"
+                      name="lastName"
+                      value={me.lastName}
+                      onChange={handleUs}
+                    ></input>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-6 col-12 col-sm-12">
+                  <div className="email">
+                    <label className="mt-2">E-mail</label>
+                    <input
+                      type="email"
+                      placeholder="e-mail"
+                      name="email"
+                      value={me.email}
+                      onChange={handleUs}
+                    ></input>
+                  </div>
+                </div>
+                <div className="col-lg-6 col-md-6 col-12 col-sm-12">
+                  <div className="subject">
+                    <label className="mt-2">Subject</label>
+                    <input
+                      type="text"
+                      placeholder="subject"
+                      name="subject"
+                      value={me.subject}
+                      onChange={handleUs}
+                    ></input>
+                  </div>
+                </div>
+                <div className="col-lg-12 col-md-12 col-12 col-sm-12">
+                  <div className="messageForMe">
+                    <label className="mt-2">Message</label>
+                    <textarea
+                      rows={5}
+                      type="text"
+                      className="forme"
+                      name="message"
+                      value={me.message}
+                      onChange={handleUs}
+                    ></textarea>
+                  </div>
+                </div>
               </div>
-              <div className="lastname">
-                <label>Lastname</label>
-                <br></br>
-                <input
-                  type="text"
-                  placeholder="lastname"
-                  name="lastName"
-                  value={me.lastName}
-                  onChange={handleUs}
-                ></input>
-              </div>
-              <div className="email">
-                <label>E-mail</label>
-                <br></br>
-                <input
-                  type="email"
-                  placeholder="e-mail"
-                  name="email"
-                  value={me.email}
-                  onChange={handleUs}
-                ></input>
-              </div>
-              <div className="subject">
-                <label>Subject</label>
-                <br></br>
-                <input
-                  type="text"
-                  placeholder="subject"
-                  name="subject"
-                  value={me.subject}
-                  onChange={handleUs}
-                ></input>
-              </div>
-              <div className="messageForMe">
-                <label>Message</label>
-                <br></br>
-                <textarea
-                  type="text"
-                  className="forme"
-                  name="message"
-                  value={me.message}
-                  onChange={handleUs}
-                ></textarea>
-              </div>
-              <button type="submit" className="me-btn">
+              <button type="submit" className="me-btn mt-4">
                 Submit
               </button>
             </form>

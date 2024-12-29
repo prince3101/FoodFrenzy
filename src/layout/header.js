@@ -28,7 +28,7 @@ const header = () => {
                   className="nav-link"
                   activeClassName="active"
                   aria-current="page"
-                  to="/home"
+                  to="/"
                 >
                   Home
                 </NavLink>
@@ -39,7 +39,12 @@ const header = () => {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink className="nav-link" activeClassName="active" to="/kot">
+                <NavLink
+                  className="nav-link KOT"
+                  activeClassName="active"
+                  to="/kot"
+                  title="Kitchen Order Ticket"
+                >
                   KOT
                 </NavLink>
               </li>
@@ -58,6 +63,19 @@ const header = () => {
                   About Us
                 </NavLink>
               </li>
+              {localStorage.getItem("token") ? (
+                <li className="nav-item">
+                  <NavLink className="nav-link" activeClassName="active" to="/" onClick={() => localStorage.removeItem('token')}>
+                    Logout
+                  </NavLink>
+                </li>
+              ) : (
+                <li className="nav-item">
+                  <NavLink className="nav-link" activeClassName="active" to="/login">
+                    Login
+                  </NavLink>
+                </li>
+              )}
             </ul>
           </div>
         </div>

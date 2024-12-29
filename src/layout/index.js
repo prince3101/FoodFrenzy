@@ -9,7 +9,7 @@ const Layout = () => {
   const location = useLocation("");
 
   // added a route which you not need to add header footer
-  const hiddenLayoutRoutes = ["/"];
+  const hiddenLayoutRoutes = ["/login"];
 
   return (
     <>
