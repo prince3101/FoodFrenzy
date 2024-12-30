@@ -38,8 +38,8 @@ const Bill = () => {
 
       <div className="bill-data container">
         {
-          <table class="table">
-            <thead>
+          <table class="table bill-head">
+            <thead className="bill-col">
               <tr className="tb-kot">
                 <th scope="col">#</th>
                 <th scope="col">Table no.</th>
@@ -52,7 +52,7 @@ const Bill = () => {
                 <th scope="col">Download</th>
               </tr>
             </thead>
-            <tbody>
+            <tbody className="bills-data">
               {Array.isArray(billData) &&
                 billData?.map((cur, index) => {
                   return (

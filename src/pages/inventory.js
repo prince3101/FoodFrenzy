@@ -76,6 +76,9 @@ const Inventory = () => {
   };
 
   const moveToKOT = () => {
+
+    alert("Your food forward in KOT  !")
+
     const getKOTItem = localStorage.getItem("table_kot");
     if (getKOTItem) {
       const oldData = JSON.parse(getKOTItem);

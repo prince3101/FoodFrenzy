@@ -3,6 +3,10 @@ import Logo from "../assets/images/Logo.png";
 import { NavLink } from "react-router-dom";
 
 const header = () => {
+
+  const handleLogout = () => {
+    alert ("Are You Sure LogOut !");
+  }
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -66,7 +70,7 @@ const header = () => {
               {localStorage.getItem("token") ? (
                 <li className="nav-item">
                   <NavLink className="nav-link" activeClassName="active" to="/" onClick={() => localStorage.removeItem('token')}>
-                    Logout
+                    <button onClick={handleLogout} className="logout">Logout</button>
                   </NavLink>
                 </li>
               ) : (

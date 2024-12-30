@@ -982,6 +982,22 @@ hr{
   display: flex;
   gap: 150px;
 }
+.bills-data{
+  /* background-color: #ACE1AF; */
+}
+.bill-col{
+  background-color:#EE4E4E;
+  color: white;
+}
 
+.logout{
+  padding: 3px;
+  width: 90px;
+  background-color: #EE4E4E;
+  color: white;
+  border-radius: 10px;
+  border: transparent;
+  font-weight: bold;
+}
 
 
